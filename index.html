@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Productos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Agregar / Editar Producto</h1>
+    <form id="product-form">
+      <input type="hidden" id="edit-index" />
+      <input type="text" id="name" placeholder="Nombre del producto" required />
+      <input type="number" id="price" placeholder="Precio" required />
+      <input type="number" id="stock" placeholder="Cantidad en stock" required />
+      
+      <!-- NUEVO: selector de categoría -->
+      <select id="category" required>
+        <option value="">Selecciona una categoría</option>
+        <option value="Frutas">Frutas</option>
+        <option value="Pasteles">Pasteles</option>
+        <option value="Carnes">Carnes</option>
+        <option value="Verduras">Verduras</option>
+      </select>
+
+      <button type="submit">Guardar</button>
+    </form>
+
+    <h2>Buscar y Filtrar Productos</h2>
+    <!-- NUEVO: barra de búsqueda y filtro -->
+    <input type="text" id="searchBar" placeholder="Buscar por nombre..." />
+    <select id="categoryFilter">
+      <option value="">Todas las categorías</option>
+      <option value="Frutas">Frutas</option>
+      <option value="Pasteles">Pasteles</option>
+      <option value="Carnes">Carnes</option>
+      <option value="Verduras">Verduras</option>
+    </select>
+
+    <h2>Lista de Productos</h2>
+    <ul id="product-list"></ul>
+  </div>
+
+  <div class="icon-decoration">
+    <img src="imagenes/IconoFondo_1.png" class="icon apple">
+    <img src="imagenes/IconoFondo_2.png" class="icon cake">
+    <img src="imagenes/IconoFondo_3.png" class="icon meat">
+    <img src="imagenes/IconoFondo_4.png" class="icon meatt">
+    <img src="imagenes/IconoFondo_5.png" class="icon carrot">
+    <img src="imagenes/IconoFondo_6.png" class="icon potato">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
