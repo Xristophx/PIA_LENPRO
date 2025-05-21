@@ -1,0 +1,201 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  button {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #357ab8;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f9f9f9;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  .actions button:first-child {
+    color: #4caf50;
+  }
+  
+  .actions button:last-child {
+    color: #f44336;
+  }
+  
+ /*Fondo de decoración (Iconos)*/
+  .icon-decoration {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .icon {
+    position: absolute;
+    pointer-events: none;
+    animation: flotar 4s ease-in-out infinite;
+    z-index: -1;
+  }
+  
+
+  .apple {
+    top: 10%;
+    left: 5%;
+    width: 80px;
+    transform: rotate(-20deg);
+    --rot: -20deg;
+  }
+  
+  .cake {
+    bottom: 20%;
+    right: 10%;
+    width: 70px;
+    transform: rotate(30deg);
+    --rot: 30deg;
+  }
+  
+  .meat {
+    top: 50%;
+    left: 80%;
+    width: 60px;
+    transform: rotate(-15deg);
+    --rot: -5deg;
+  }
+
+  .meatt {
+    top: 10%;
+    left: 90%;
+    width: 60px;
+    transform: rotate(20deg);
+    --rot: -10deg;
+  }
+
+  .carrot {
+    top: 30%;
+    left: 20%;
+    width: 60px;
+    transform: rotate(-5deg);
+    --rot: 20deg;
+  }
+
+  .potato {
+    top: 70%;
+    left: 15%;
+    width: 60px;
+    transform: rotate(10deg);
+    --rot: -25deg;
+  }
+
+  
+  @keyframes flotar {
+    0% {
+      transform: translateY(0) rotate(var(--rot));
+    }
+    50% {
+      transform: translateY(-10px) rotate(calc(var(--rot) + 5deg));
+    }
+    100% {
+      transform: translateY(0) rotate(var(--rot));
+    }
+  }
+  
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+#searchBar {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#searchBar:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
